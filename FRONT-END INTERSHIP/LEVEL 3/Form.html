@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Added novalidate to disable browser default validation popups -->
+    <form id="myForm" novalidate>
+        <fieldset>
+            <legend style="text-align: center; font-size: 30px;">Information</legend>
+
+            <!-- Name (Removed 'required') -->
+            <label for="name">Name : </label>
+            <input type="text" id="name" placeholder="Enter Name" name="name">
+            <small id="nameError" class="error-msg"></small><br><br>
+
+            <!-- Password (Removed 'pattern') -->
+            <label for="pass">Password : </label>
+            <input type="password" id="pass" name="pass" placeholder="Enter Password">
+            <small id="passError" class="error-msg"></small><br><br>
+
+            <label for="email">Email : </label>
+            <input type="email" id="email" placeholder="tejas@gmail.com"><br><br>
+
+            <label>Gender : </label>
+            <input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label>
+            <input type="radio" name="gender" value="Other" id="other"><label for="other">Other</label><br><br>
+            
+            <label for="qualification">Qualification</label>
+            <select name="qualification" id="qualification">
+                <option value="">--Select--</option>
+                <optgroup label="BTECH">
+                    <option value="CSE">CSE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                </optgroup>
+                <optgroup label="BSC">
+                    <option value="Maths">Maths</option>
+                    <option value="Science">Science</option>
+                </optgroup>
+            </select><br><br>
+            
+            <label for="doj">DOJ</label>
+            <input type="date" id="doj">
+            <small id="dojError" class="error-msg"></small><br><br>
+
+            <label for="address">Address</label>
+            <textarea name="address" id="address"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

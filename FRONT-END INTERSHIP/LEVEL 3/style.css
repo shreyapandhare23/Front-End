@@ -1,0 +1,148 @@
+/* General Reset & Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container */
+form {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* Fieldset Styling */
+fieldset {
+    background: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 35px 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* Legend Styling */
+legend {
+    font-weight: 700;
+    color: #4a5568;
+    background: #ffffff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Base Labels */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3748;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+/* Text Inputs, Select Dropdowns, and Textarea */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #2d3748;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Focus States for Inputs */
+input:focus, 
+select:focus, 
+textarea:focus {
+    border-color: #667eea;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+/* Readonly Input Styling */
+input[readonly] {
+    background-color: #edf2f7;
+    color: #718096;
+    cursor: not-allowed;
+}
+
+/* Radio & Checkbox Spacing & Custom Accent Color */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+    margin-left: 12px;
+    accent-color: #667eea;
+    cursor: pointer;
+}
+
+/* Align first radio/checkbox cleanly */
+input[type="radio"]:first-of-type,
+input[type="checkbox"]:first-of-type {
+    margin-left: 0;
+}
+
+/* Labels associated with radios and checkboxes */
+fieldset > label + input[type="radio"] + label,
+fieldset > label + input[type="checkbox"] + label {
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Range Slider */
+input[type="range"] {
+    width: 100%;
+    accent-color: #667eea;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* File Upload Field */
+input[type="file"] {
+    font-size: 14px;
+    color: #4a5568;
+    padding: 6px 0;
+}
+
+/* Textarea Layout */
+textarea {
+    resize: vertical;
+    height: 90px;
+}
+
+/* Submit Button Design */
+input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.1s ease;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.92;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
